@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ИП Прудникова Наталья Ивановна — профессиональные бухгалтерские и налоговые услуги в Пскове.">
+  <title>ИП Прудникова Наталья Ивановна | Бухгалтерские услуги в Пскове</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#0B1B2E',
+              light: '#162C46'
+            },
+            gold: {
+              DEFAULT: '#C5A05B',
+              light: '#DBC08C',
+              hover: '#B08D4B'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .heading { font-family: 'Playfair Display', serif; }
+    
+    .hero-bg { 
+      background: linear-gradient(135deg, rgba(11,27,46,0.95) 0%, rgba(22,44,70,0.9) 100%), 
+                  url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+      background-color: #0B1B2E;
+    }
+    
+    .service-card { 
+      transition: all 0.4s ease; 
+      border-top: 4px solid transparent;
+    }
+    .service-card:hover { 
+      transform: translateY(-8px); 
+      border-top-color: #C5A05B;
+      box-shadow: 0 20px 40px -10px rgba(11, 27, 46, 0.1); 
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: #C5A05B;
+      cursor: pointer;
+      margin-top: -8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 8px;
+      cursor: pointer;
+      background: #e2e8f0;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Navbar -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 bg-navy text-gold rounded-xl flex items-center justify-center text-2xl shadow-inner">
+          <i class="fa-solid fa-scale-balanced"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-semibold tracking-tight text-navy uppercase">Прудникова Н.И.</span>
+          <span class="text-[11px] text-gray-500 font-medium tracking-wider">Бухгалтерские услуги</span>
+        </div>
+      </div>
+      <div class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
+        <a href="#services" class="hover:text-gold transition duration-200">Услуги</a>
+        <a href="#calculator" class="hover:text-gold transition duration-200">Калькулятор</a>
+        <a href="#about" class="hover:text-gold transition duration-200">Обо мне</a>
+        <a href="#contacts" class="hover:text-gold transition duration-200">Контакты</a>
+      </div>
+      <a href="https://wa.me/79113592210" target="_blank" class="hidden sm:flex items-center gap-2 bg-[#25D366] hover:bg-[#1DA851] text-white px-6 py-2.5 rounded-lg text-sm font-medium transition shadow-sm">
+        <i class="fab fa-whatsapp text-lg"></i> WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-bg text-white py-24 lg:py-32 border-b-4 border-gold">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center bg-white/10 border border-white/20 backdrop-blur-md px-5 py-2 rounded-full text-xs font-medium mb-10 shadow-sm">
+        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-3"></span>
+        ИП действует на 09.04.2026 • ИНН 602703965771
+      </div>
+      
+      <h1 class="heading text-5xl md:text-6xl lg:text-7xl leading-tight font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">
+        Профессиональное бухгалтерское<br>и налоговое сопровождение
+      </h1>
+      
+      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
+        Полное ведение учёта, законная оптимизация налогов и надежная защита вашего бизнеса в Пскове и по всей России.<br>
+        <span class="text-gold font-medium block mt-2"><i class="fa-solid fa-shield-halved mr-2"></i> 100% побед в судах в качестве истца</span>
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#contacts" class="w-full sm:w-auto bg-gold hover:bg-gold-hover text-navy px-8 py-4 rounded-xl font-semibold text-base transition shadow-lg">
+          Бесплатная консультация
+        </a>
+        <a href="tel:+79113592210" class="w-full sm:w-auto bg-transparent border border-gray-400 hover:border-white hover:bg-white/5 text-white px-8 py-4 rounded-xl font-medium text-base transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone"></i> +7 911 359-22-10
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="bg-white py-4 text-center text-xs md:text-sm text-gray-500 border-b shadow-sm font-medium tracking-wide uppercase">
+    <span class="mx-3">ОКВЭД 69.20</span> • <span class="mx-3">г. Псков</span> • <span class="mx-3">ОГРНИП 324600000009643</span>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div data-aos="fade-up">
+          <div class="inline-block text-gold font-semibold tracking-wider uppercase text-sm mb-4">Об эксперте</div>
+          <h2 class="heading text-4xl font-bold text-navy mb-6">Прудникова Наталья Ивановна</h2>
+          <div class="w-20 h-1 bg-gold mb-8"></div>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Квалифицированный специалист с многолетним опытом в бухгалтерском учёте и корпоративном праве. Я предоставляю услуги, которые помогают бизнесу расти, минимизируя финансовые риски.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Мой опыт включает руководство финансовыми отделами, работу в должности директора ООО «БАРРЭЛ» и управление кадровым агентством «Кадры».
+          </p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <h3 class="font-bold text-lg text-navy mb-6 flex items-center gap-3">
+              <i class="fa-solid fa-briefcase text-gold"></i> Дополнительные компетенции
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center pb-4 border-b border-gray-50">
+                <span class="text-gray-600">Рестораны и услуги по доставке питания</span>
+                <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded text-xs font-mono">ОКВЭД 56.10</span>
+              </li>
+              <li class="flex justify-between items-center pb-4 border-b border-gray-50">
+                <span class="text-gray-600">Обслуживание торжественных мероприятий</span>
+                <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded text-xs font-mono">ОКВЭД 56.21</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-600">Деятельность предприятий общественного питания</span>
+                <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded text-xs font-mono">ОКВЭД 56.29</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-24 bg-white border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <div class="inline-block text-gold font-semibold tracking-wider uppercase text-sm mb-4">Направления работы</div>
+        <h2 class="heading text-4xl font-bold text-navy">Ключевые услуги</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="service-card bg-gray-50 p-8 rounded-2xl border border-gray-100" data-aos="fade-up">
+          <div class="w-14 h-14 bg-navy/5 rounded-xl flex items-center justify-center mb-6">
+            <i class="fa-solid fa-calculator text-2xl text-navy"></i>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Бухгалтерский учёт</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Полное ведение бухгалтерии для ИП и ООО на любых режимах налогообложения (ОСНО, УСН, Патент). Сдача отчетности точно в срок.</p>
+        </div>
+        <div class="service-card bg-gray-50 p-8 rounded-2xl border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-14 h-14 bg-navy/5 rounded-xl flex items-center justify-center mb-6">
+            <i class="fa-solid fa-coins text-2xl text-navy"></i>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Налоговая оптимизация</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Законное снижение налоговой нагрузки, консультирование по выбору оптимального режима, ответы на требования ФНС.</p>
+        </div>
+        <div class="service-card bg-gray-50 p-8 rounded-2xl border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-14 h-14 bg-navy/5 rounded-xl flex items-center justify-center mb-6">
+            <i class="fa-solid fa-folder-open text-2xl text-navy"></i>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Восстановление учёта</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Экспресс-аудит текущего состояния баз данных, исправление ошибок прошлых периодов и наведение полного порядка в документах.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <section id="calculator" class="py-24 bg-gray-50 border-t border-gray-200">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="heading text-4xl font-bold text-navy mb-4">Предварительный расчет</h2>
+        <p class="text-gray-500">Узнайте ориентировочную стоимость обслуживания в месяц</p>
+      </div>
+      <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-sm border border-gray-100">
+        <div class="grid md:grid-cols-2 gap-10">
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-3">Система налогообложения</label>
+            <div class="relative">
+              <select id="taxSystem" class="w-full appearance-none bg-gray-50 border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition">
+                <option value="usn6">УСН 6% (Доходы)</option>
+                <option value="usn15">УСН 15% (Доходы - Расходы)</option>
+                <option value="osno">ОСНО</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-3">Среднемесячный оборот</label>
+            <input type="range" id="turnover" min="100000" max="6000000" step="50000" value="1200000" class="w-full appearance-none bg-transparent">
+            <div id="turnoverValue" class="text-center text-2xl font-bold mt-4 text-navy">1 200 000 ₽</div>
+          </div>
+        </div>
+        <button onclick="calculateCost()" class="mt-10 w-full bg-navy hover:bg-navy-light text-white py-4 rounded-xl text-lg font-semibold transition shadow-md">
+          Рассчитать стоимость
+        </button>
+        
+        <div id="resultBox" class="mt-8 pt-8 border-t border-gray-100 text-center hidden">
+          <p class="text-sm text-gray-500 mb-1">Ориентировочная стоимость в месяц</p>
+          <div id="result" class="text-4xl font-bold text-gold"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section id="contacts" class="py-24 bg-navy text-white relative overflow-hidden">
+    <!-- Decorative background element -->
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-white opacity-5 blur-3xl"></div>
+    
+    <div class="max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-5 gap-12 lg:gap-20">
+        
+        <div class="lg:col-span-2 flex flex-col justify-center">
+          <div class="inline-block text-gold font-semibold tracking-wider uppercase text-sm mb-4">Связь с нами</div>
+          <h2 class="heading text-4xl font-bold mb-6">Остались вопросы?</h2>
+          <p class="text-gray-400 mb-10 leading-relaxed">
+            Заполните форму заявки, и я свяжусь с вами в ближайшее время для обсуждения деталей вашего бизнеса и подбора оптимальных решений.
+          </p>
+          
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-gold">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Телефон / WhatsApp</p>
+                <a href="tel:+79113592210" class="text-lg font-semibold hover:text-gold transition">+7 911 359-22-10</a>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-gold">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Email</p>
+                <a href="mailto:nnn-75@mail.ru" class="text-lg font-semibold hover:text-gold transition">nnn-75@mail.ru</a>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-gold">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Регион работы</p>
+                <p class="text-lg font-semibold">Псков и вся Россия (удаленно)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3">
+          <form id="contactForm" class="bg-white p-8 lg:p-10 rounded-2xl shadow-2xl text-gray-800">
+            <h3 class="text-2xl font-bold text-navy mb-8">Оставить заявку</h3>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Ваше Имя</label>
+                <input type="text" id="name" required class="w-full bg-gray-50 border border-gray-200 text-gray-800 py-3 px-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition placeholder-gray-400" placeholder="Иван Иванов">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Телефон</label>
+                <input type="tel" id="phone" required class="w-full bg-gray-50 border border-gray-200 text-gray-800 py-3 px-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition placeholder-gray-400" placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div class="mb-8">
+              <label class="block text-sm font-semibold text-gray-700 mb-2">Краткое описание задачи</label>
+              <textarea id="message" rows="4" required class="w-full bg-gray-50 border border-gray-200 text-gray-800 py-3 px-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition placeholder-gray-400 resize-none" placeholder="Например: Требуется бухгалтерское сопровождение для ООО на УСН..."></textarea>
+            </div>
+            <button type="submit" class="w-full bg-gold hover:bg-gold-hover text-white py-4 rounded-xl font-bold text-lg transition shadow-md">
+              Отправить заявку
+            </button>
+            <p class="text-xs text-gray-400 text-center mt-4">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#07111D] text-gray-500 py-8 text-center text-sm border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>© 2026 ИП Прудникова Н. И. Все права защищены.</div>
+      <div class="flex gap-4">
+        <span>ИНН: 602703965771</span>
+        <span class="hidden sm:inline">•</span>
+        <span>ОГРНИП: 324600000009643</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/79113592210" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-xl hover:scale-110 transition-transform z-50">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, offset: 50 });
+
+    function calculateCost() {
+      const system = document.getElementById('taxSystem').value;
+      let base = system === 'usn6' ? 14500 : system === 'usn15' ? 18500 : 29500;
+      const turnover = parseInt(document.getElementById('turnover').value);
+      const final = Math.round(base + (turnover / 100000) * 1600);
+      
+      const resBox = document.getElementById('resultBox');
+      const res = document.getElementById('result');
+      
+      resBox.classList.remove('hidden');
+      res.textContent = final.toLocaleString('ru-RU') + ' ₽';
+    }
+
+    document.getElementById('turnover').addEventListener('input', function() {
+      document.getElementById('turnoverValue').textContent = parseInt(this.value).toLocaleString('ru-RU') + ' ₽';
+      if(!document.getElementById('resultBox').classList.contains('hidden')) {
+          calculateCost();
+      }
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Заявка успешно отправлена! Наталья Ивановна свяжется с вами в ближайшее время.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
